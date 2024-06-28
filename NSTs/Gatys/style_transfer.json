@@ -1,0 +1,8 @@
+{
+  "img_size": [512, 512],
+  "style_weight": 1000000,
+  "content_weight": 1,
+  "epochs": 500,
+  "norm_mean": [0.485, 0.456, 0.406],
+  "norm_std": [0.229, 0.224, 0.225]
+}
