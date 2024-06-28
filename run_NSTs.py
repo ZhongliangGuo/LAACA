@@ -159,9 +159,9 @@ def run_SANet(device, save_folder, label_folder, step=1, do_nst=False):
     transform.eval()
     vgg.eval()
 
-    decoder.load_state_dict(torch.load('./NSTs/AdaAttN/decoder_iter_500000.pth'))
-    transform.load_state_dict(torch.load('./NSTs/AdaAttN/transformer_iter_500000.pth'))
-    vgg.load_state_dict(torch.load(r'./NSTs/AdaAttN/vgg_normalised.pth'))
+    decoder.load_state_dict(torch.load('./NSTs/SANet/decoder_iter_500000.pth'))
+    transform.load_state_dict(torch.load('./NSTs/SANet/transformer_iter_500000.pth'))
+    vgg.load_state_dict(torch.load(r'./NSTs/SANet/vgg_normalised.pth'))
 
     norm = nn.Sequential(*list(vgg.children())[:1])
     enc_1 = nn.Sequential(*list(vgg.children())[:4])  # input -> relu1_1
