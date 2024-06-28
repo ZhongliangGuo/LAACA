@@ -18,6 +18,8 @@ the details for parameters can be found via:
 python main.py --help
 ```
 
+Our proposed Image Quality Assessment (IQA), **Aesthetic Color Distance Metric** (ACDM), can be found in this [repo](https://github.com/ZhongliangGuo/ACDM).
+
 ## Cite
 
 ```latex
