@@ -36,8 +36,6 @@ if __name__ == '__main__':
     parser.add_argument('--efdm_decoder_path', type=str, default=r'./NSTs/decoder_based/models/efdm_decoder.pth')
     parser.add_argument('--label_folder', type=str, default='labels',
                         help='Path to the folder where contains the inst_label.csv')
-
-    parser.add_argument('--method', type=str, default='adain', choices=['efdm', 'adain'])
     parser.add_argument('--k', type=int, default=4, help='gaussian kernel size')
     parser.add_argument('--alpha', type=float, default=8, help='update step-length, alpha/255')
     parser.add_argument('--epsilon', type=float, default=80, help='update step-length, alpha/255')
