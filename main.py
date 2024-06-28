@@ -120,9 +120,6 @@ if __name__ == '__main__':
         run_OST(device, label_folder=args.save_path, save_folder=join(args.save_path, 'OST'), do_nst=args.do_nst)
     if 'SANet' in nst_methods:
         run_SANet(device, label_folder=args.save_path, save_folder=join(args.save_path, 'SANet'), do_nst=args.do_nst)
-    if 'HM' in nst_methods:
-        run_decoder_based(device, label_folder=args.save_path, save_folder=join(args.save_path, 'HM'),
-                          method='hm', do_nst=args.do_nst)
     if 'EFDM' in nst_methods:
         run_decoder_based(device, label_folder=args.save_path, save_folder=join(args.save_path, 'EFDM'),
                           method='efdm', do_nst=args.do_nst)
