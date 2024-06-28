@@ -1,50 +1,50 @@
-import torch.nn as nn
-import torch
 import copy
+import torch
+import torch.nn as nn
 
-dec5_1 = nn.Sequential( # Sequential,
+dec5_1 = nn.Sequential(  # Sequential,
     nn.ReflectionPad2d((1, 1, 1, 1)),
-    nn.Conv2d(512,512,(3, 3)),
+    nn.Conv2d(512, 512, (3, 3)),
     nn.ReLU(),
     nn.UpsamplingNearest2d(scale_factor=2),
     nn.ReflectionPad2d((1, 1, 1, 1)),
-    nn.Conv2d(512,512,(3, 3)),
+    nn.Conv2d(512, 512, (3, 3)),
     nn.ReLU(),
     nn.ReflectionPad2d((1, 1, 1, 1)),
-    nn.Conv2d(512,512,(3, 3)),
+    nn.Conv2d(512, 512, (3, 3)),
     nn.ReLU(),
     nn.ReflectionPad2d((1, 1, 1, 1)),
-    nn.Conv2d(512,512,(3, 3)),
+    nn.Conv2d(512, 512, (3, 3)),
     nn.ReLU(),
     nn.ReflectionPad2d((1, 1, 1, 1)),
-    nn.Conv2d(512,256,(3, 3)),
-    nn.ReLU(),
-    nn.UpsamplingNearest2d(scale_factor=2),
-    nn.ReflectionPad2d((1, 1, 1, 1)),
-    nn.Conv2d(256,256,(3, 3)),
-    nn.ReLU(),
-    nn.ReflectionPad2d((1, 1, 1, 1)),
-    nn.Conv2d(256,256,(3, 3)),
-    nn.ReLU(),
-    nn.ReflectionPad2d((1, 1, 1, 1)),
-    nn.Conv2d(256,256,(3, 3)),
-    nn.ReLU(),
-    nn.ReflectionPad2d((1, 1, 1, 1)),
-    nn.Conv2d(256,128,(3, 3)),
+    nn.Conv2d(512, 256, (3, 3)),
     nn.ReLU(),
     nn.UpsamplingNearest2d(scale_factor=2),
     nn.ReflectionPad2d((1, 1, 1, 1)),
-    nn.Conv2d(128,128,(3, 3)),
+    nn.Conv2d(256, 256, (3, 3)),
     nn.ReLU(),
     nn.ReflectionPad2d((1, 1, 1, 1)),
-    nn.Conv2d(128,64,(3, 3)),
+    nn.Conv2d(256, 256, (3, 3)),
+    nn.ReLU(),
+    nn.ReflectionPad2d((1, 1, 1, 1)),
+    nn.Conv2d(256, 256, (3, 3)),
+    nn.ReLU(),
+    nn.ReflectionPad2d((1, 1, 1, 1)),
+    nn.Conv2d(256, 128, (3, 3)),
     nn.ReLU(),
     nn.UpsamplingNearest2d(scale_factor=2),
     nn.ReflectionPad2d((1, 1, 1, 1)),
-    nn.Conv2d(64,64,(3, 3)),
+    nn.Conv2d(128, 128, (3, 3)),
     nn.ReLU(),
     nn.ReflectionPad2d((1, 1, 1, 1)),
-    nn.Conv2d(64,3,(3, 3)),
+    nn.Conv2d(128, 64, (3, 3)),
+    nn.ReLU(),
+    nn.UpsamplingNearest2d(scale_factor=2),
+    nn.ReflectionPad2d((1, 1, 1, 1)),
+    nn.Conv2d(64, 64, (3, 3)),
+    nn.ReLU(),
+    nn.ReflectionPad2d((1, 1, 1, 1)),
+    nn.Conv2d(64, 3, (3, 3)),
 )
 
 
@@ -63,7 +63,7 @@ class Decoder(nn.Module):
             self.net = dec5_1
         else:
             raise ValueError('level should be between 1~5')
-            
+
         if pretrained_path is not None:
             self.net.load_state_dict(torch.load(pretrained_path, map_location=lambda storage, loc: storage))
 

@@ -1,6 +1,6 @@
 import torch.nn as nn
-from NSTs.OST.VGGencoder import Encoder
 from NSTs.OST.decoder import Decoder
+from NSTs.OST.VGGencoder import Encoder
 from NSTs.OST.feature_transformer import feature_transform
 
 
@@ -17,7 +17,7 @@ class SingleLevelAE_OST(nn.Module):
         res = feature_transform(content_feature, style_feature, alpha)
         res = self.decoder(res)
         return res
-    
+
 
 class MultiLevelAE_OST(nn.Module):
     def __init__(self, pretrained_path_dir='models'):

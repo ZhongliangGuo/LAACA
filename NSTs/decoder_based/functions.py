@@ -1,6 +1,6 @@
 import torch
-from skimage.exposure import match_histograms
 import numpy as np
+from skimage.exposure import match_histograms
 
 
 def calc_mean_std(feat: torch.Tensor, eps=1e-5):

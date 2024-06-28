@@ -1,11 +1,8 @@
 import json
-
 import torch
-from torchvision import models
-
-from NSTs.Gatys.losses import StyleLoss, ContentLoss
-
 from torch import nn, optim
+from torchvision import models
+from NSTs.Gatys.losses import StyleLoss, ContentLoss
 
 
 class Normalization(nn.Module):
@@ -75,7 +72,7 @@ def get_config(path: str):
 
 
 def run_once(cnn,
-        normalization: Normalization,
+             normalization: Normalization,
              style_img: torch.Tensor,
              content_img: torch.Tensor,
              sty_trans_config: dict,

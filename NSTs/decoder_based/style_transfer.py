@@ -1,8 +1,8 @@
 import torch
 from torch import nn
+from NSTs.decoder_based.functions import histogram_matching as hm
 from NSTs.decoder_based.functions import adaptive_instance_normalization as adain
 from NSTs.decoder_based.functions import exact_feature_distribution_matching as efdm
-from NSTs.decoder_based.functions import histogram_matching as hm
 
 
 def get_vgg(model_path='./models/vgg_normalised.pth'):
