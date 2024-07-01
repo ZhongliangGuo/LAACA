@@ -20,6 +20,17 @@ python main.py --help
 
 Our proposed Image Quality Assessment (IQA), **Aesthetic Color Distance Metric** (ACDM), can be found in this [repo](https://github.com/ZhongliangGuo/ACDM).
 
+## Environment
+
+```
+numpy==2.0.0
+pandas==1.5.2
+Pillow==9.2.0
+torch==2.0.0
+torchvision==0.15.1
+tqdm==4.65.0
+```
+
 ## Cite
 
 ```latex
