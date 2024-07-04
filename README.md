@@ -34,11 +34,12 @@ tqdm==4.65.0
 ## Cite
 
 ```latex
-@article{guo2024artwork,
-  title={Artwork protection against neural style transfer using locally adaptive adversarial color attack},
-  author={Guo, Zhongliang and Wang, Kaixuan and Li, Weiye and Qian, Yifei and Arandjelovi{\'c}, Ognjen and Fang, Lei},
-  journal={arXiv preprint arXiv:2401.09673},
-  year={2024}
+@incollection{guo2024artwork,
+  title={Artwork Protection Against Neural Style Transfer Using Locally Adaptive Adversarial Color Attack},
+  author={Guo, Zhongliang and Dong, Junhao and Qian, Yifei and Wang, Kaixuan and Li, Weiye and Guo, Ziheng and Wang, Yuheng and Li, Yanli and Arandjelovi{\'c}, Ognjen and Fang, Lei},
+  booktitle={ECAI 2024},
+  year={2024},
+  publisher={IOS Press}
 }
 ```
 
