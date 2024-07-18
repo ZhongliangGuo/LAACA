@@ -1,6 +1,6 @@
 # Locally Adaptive Adversarial Color Attack
 
-This project is for the LAACA we proposed in the paper "[Artwork Protection Against Neural Style Transfer Using Locally Adaptive Adversarial Color Attack](https://arxiv.org/abs/2401.09673)".
+This project is for the LAACA we proposed in the paper "[Artwork Protection Against Neural Style Transfer Using Locally Adaptive Adversarial Color Attack](https://arxiv.org/abs/2401.09673)", which is accepted by **50th European Conference on Artificial Intelligence (ECAI 2024)**.
 
 The `dataset` folder contains the content images and style images.
 
