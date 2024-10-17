@@ -39,7 +39,8 @@ tqdm==4.65.0
   author={Guo, Zhongliang and Dong, Junhao and Qian, Yifei and Wang, Kaixuan and Li, Weiye and Guo, Ziheng and Wang, Yuheng and Li, Yanli and Arandjelovi{\'c}, Ognjen and Fang, Lei},
   booktitle={ECAI 2024},
   year={2024},
-  publisher={IOS Press}
+  publisher={IOS Press},
+  pages={1414-1421}
 }
 ```
 
