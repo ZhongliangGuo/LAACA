@@ -44,10 +44,11 @@ tqdm==4.65.0
 }
 
 @article{guo2025artwork,
-title = {Artwork Protection Against Unauthorized Neural Style Transfer and Aesthetic Color Distance Metric},
-journal = {Pattern Recognition},
-pages = {112105},
-year = {2025},
-author = {Zhongliang Guo and Yifei Qian and Shuai Zhao and Junhao Dong and Yanli Li and Ognjen Arandjelović and Lei Fang and Chun Pong Lau}
+  title = {Artwork Protection Against Unauthorized Neural Style Transfer and Aesthetic Color Distance Metric},
+  journal = {Pattern Recognition},
+  pages = {112105},
+  year = {2025},
+  author = {Zhongliang Guo and Yifei Qian and Shuai Zhao and Junhao Dong and Yanli Li and Ognjen Arandjelović and Lei Fang and Chun Pong Lau}
+}
 ```
 
